@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Ricky Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    Ricky Studio
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+      <div id="responseMsg"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const responseMsg = document.getElementById('responseMsg');
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+          responseMsg.textContent = data.message;
+          responseMsg.style.color = 'green';
+          document.getElementById('contactForm').reset();
+        } else {
+          responseMsg.textContent = data.message || 'Failed to send message.';
+          responseMsg.style.color = 'red';
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        responseMsg.textContent = 'Server error. Please try again later.';
+        responseMsg.style.color = 'red';
+      }
+    });
+  </script>
+  <script src="/contact.js"></script>
+</body>
+</html>

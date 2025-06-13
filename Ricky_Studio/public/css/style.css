@@ -1,0 +1,243 @@
+/* General Reset and Styling */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #fffaf0; /* Creamy white */
+  color: #8b6d4b; /* Soft gold/brown */
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header and Nav */
+header {
+  background: #f9f5ef; /* very light cream */
+  color: #bfa96f; /* soft gold */
+  padding: 25px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  box-shadow: 0 4px 15px rgba(191, 169, 111, 0.4);
+}
+
+nav {
+  background: #fcf9f2; /* off-white */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px 0;
+  box-shadow: 0 3px 7px rgba(191, 169, 111, 0.25);
+}
+
+nav a {
+  color: #bfa96f;
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: #bfa96f;
+  color: #fffaf0;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(191, 169, 111, 0.6);
+}
+
+/* Section Titles */
+h1, h2 {
+  color: #bfa96f;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  text-align: center;
+}
+
+/* About Page */
+.about-text {
+  font-size: 1.18rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: #7a6840;
+}
+
+/* Services Cards */
+.services {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: #fcf9f2;
+  padding: 25px 20px;
+  border-radius: 18px;
+  width: 280px;
+  box-shadow: 0 5px 18px rgba(191, 169, 111, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(191, 169, 111, 0.4);
+}
+
+.service-icon {
+  font-size: 3.4rem;
+  color: #bfa96f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #9f8c4d;
+}
+
+.service-desc {
+  font-size: 1.05rem;
+  color: #7a6e45;
+  text-align: center;
+}
+
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(191, 169, 111, 0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 25px rgba(191, 169, 111, 0.4);
+}
+
+/* Modal for gallery */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0; width: 100%; height: 100%;
+  background: rgba(45, 38, 19, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3rem;
+  color: #f3eac2;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input, textarea {
+  padding: 15px 18px;
+  border-radius: 12px;
+  border: 1.5px solid #d7caa5;
+  font-size: 1.1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: 'Georgia', serif;
+  color: #5c5036;
+  background: #fcf9f2;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bfae7f;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #bfa96f;
+  background: #fffaf0;
+}
+
+button {
+  background: #bfa96f;
+  color: #fffaf0;
+  padding: 16px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  box-shadow: 0 5px 12px rgba(191, 169, 111, 0.5);
+}
+
+button:hover {
+  background: #9f8745;
+}
+
+/* Response message */
+#responseMsg {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+  min-height: 28px;
+  color: #7a6840;
+}
+
+/* Responsive tweaks */
+@media(max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}

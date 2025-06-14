@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    
+  <h1>Welcome, Admin</h1>
+  <div id="messagesContainer">Loading messages...</div>
+  <section>
+    <h2>Client Messages</h2>
+    <ul id="messages-list"></ul>
+  </section>
+
+  <section>
+    <h2>Upload Gallery Image</h2>
+    <form id="uploadForm">
+      <input type="file" id="imageFile" accept="image/*" required />
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+  
+
+
+
+  <script src="js/dashboard.js" defer></script>
+</body>
+</html>

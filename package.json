@@ -1,0 +1,24 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formspree/react": "^3.0.0",
+    "d3-scale": "^4.0.2",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-simple-maps": "^3.0.0",
+    "react-tooltip": "^5.30.0"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "latest"
+  }
+}

@@ -1,4 +1,5 @@
 name: Build and Deploy Portfolio to Cloud Run
+# Triggering deployment to verify Firebase Hosting role fix
 
 on:
   push:

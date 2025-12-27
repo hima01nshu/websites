@@ -45,11 +45,3 @@ jobs:
           region: '${{ env.REGION }}'
           flags: '--allow-unauthenticated'
 
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.GCP_SA_KEY }}'
-          channelId: live
-          projectId: ${{ env.PROJECT_ID }}
-

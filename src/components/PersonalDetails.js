@@ -17,7 +17,7 @@ const personalData = {
       { label: "Religion / Caste", value: "Hindu / Prajapati" },
       { label: "Gotra", value: "Janotharia" },
       { label: "Mother's Gotra", value: "Tahanguria" },
-      { label: "GrandMother's Gotra", value: "Jamanapuria" },
+      { label: "GrandMother's Gotra", value: "Jaunwal" },
       { label: "Manglik", value: "No" },
       { label: "Diet", value: "Vegetarian/ No-onion/ No-garlic" }
     ]

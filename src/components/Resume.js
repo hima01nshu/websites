@@ -6,7 +6,7 @@ const experiences = [
   {
     year: '2023 - Present',
     role: 'DevOps Engineer',
-    company: 'Orchestra Technology',
+    company: 'L&T Technology Services',
     description: 'Specializing in cloud automation, Kubernetes orchestration, and CI/CD pipeline optimization for scalable infrastructure.'
   },
   {

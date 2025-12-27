@@ -1,1 +1,0 @@
-{ "hosting": { "public": "public", "ignore": ["firebase.json", "**/.*", "**/node_modules/**"], "rewrites": [{ "source": "**", "run": { "serviceId": "portfolio", "region": "us-central1" } }] } }

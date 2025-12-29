@@ -34,7 +34,7 @@ const personalData = {
   family: {
     title: "Family Details",
     fields: [
-      { label: "Father", value: "Rohtash Kumar, Worker" },
+      { label: "Father", value: "Rohtash Kumar, Private Job in MNC" },
       { label: "Mother", value: "Pinki, homemaker" },
       { label: "Siblings", value: "Sister (Master's Student)" },
       { label: "Family Type", value: "Nuclear" },

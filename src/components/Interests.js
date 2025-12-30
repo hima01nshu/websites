@@ -50,6 +50,10 @@ const feedImages = [
   '/images/20251221_161332(1).jpg',
   '/images/20251221_164100.jpg',
   '/images/IMG-20251221-WA0039.jpg',
+  '/images/20251217_130434.jpg',
+  '/images/20251217_163633.jpg',
+  '/images/20251219_143324.jpg',
+  '/images/20251219_172638.jpg',
 ];
 
 export default function Interests() {
@@ -118,7 +122,7 @@ export default function Interests() {
               alt="Full screen view"
               width={1200}
               height={800}
-              style={{ objectFit: 'contain', maxWidth: '90vw', maxHeight: '90vh' }}
+              style={{ objectFit: 'contain', maxWidth: '100vw', maxHeight: '100vh' }}
             />
           </div>
         </div>

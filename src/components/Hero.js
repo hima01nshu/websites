@@ -59,7 +59,7 @@ export default function Hero() {
             </div>
             <div className="hero-img secondary-img-2">
               <Image
-                src="/images/20241231_123938.jpg"
+                src="/images/20251217_131325.jpg"
                 alt="Profile Secondary"
                 width={200}
                 height={250}

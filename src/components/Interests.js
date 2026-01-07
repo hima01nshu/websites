@@ -25,9 +25,9 @@ const hobbyData = {
   },
   Music: {
     title: "My Playlist",
-    description: "Songs that I can share with you.",
+    description: "Music to calm your mind.",
     type: "link",
-    url: "https://music.youtube.com/playlist?list=PLilg9c-jUP0TqOSHc7oMcxUg49lO_04zd&si=f15-al16T7mzbtXt",
+    url: "https://www.youtube.com/live/jfKfPfyJRdk?si=smydLG06Nv1ODhwK",
     label: "Listen on YouTube Music"
   },
   Travel: {
